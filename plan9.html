@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავთანდილი გულანშაროში: ფატმან-ხათუნი და საიდუმლო</title>
+    <!-- Tailwind CSS-ის ჩატვირთვა -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ფონტის კონფიგურაცია -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* ღია ფონი */
+            color: #1f2937;
+            line-height: 1.75;
+        }
+        .text-accent {
+            color: #10b981; /* ღია მწვანე აქცენტი (Emerald-600) */
+        }
+        .section-header {
+            background-color: #d1fae5; /* ღია მწვანე ფონი სათაურისთვის */
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border-left: 5px solid #10b981;
+        }
+        /* ახალი სტილი ბლოკებისთვის */
+        .info-block {
+            padding: 1rem;
+            border-radius: 0.75rem; /* უფრო მომრგვალებული კუთხეები */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* უფრო ძლიერი ჩრდილი */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .info-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        /* სტილი ციტატებისთვის */
+        .quote-block {
+            background-color: #fffbeb; /* ღია ყვითელი (Amber-50) */
+            border-left: 4px solid #f59e0b; /* ნარინჯისფერი ხაზი */
+        }
+        /* სტილი ტაეპების გასასწორებლად */
+        .poetic-strophe {
+            white-space: pre-wrap; /* ეს ინარჩუნებს ტაეპის შიგნით არსებულ ხაზის წყობას */
+            font-family: 'Georgia', serif;
+            line-height: 1.5;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl p-6 md:p-10 border-t-8 border-emerald-500">
+        <!-- სათაური -->
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3">
+                🔱 გულანშარო: ფატმან-ხათუნი და ნესტანის საიდუმლო 💔
+            </h1>
+            <p class="text-gray-500 text-lg italic">ავთანდილის თავგადასავალი</p>
+        </header>
+
+        <!-- ძირითადი ტექსტი - შესავალი -->
+        <div class="mb-8 text-xl font-medium text-gray-700 p-4 bg-gray-50 rounded-lg shadow-inner info-block">
+            ვაჭრებთან ერთად მგზავრობის შემდეგ ავთანდილი ზღვათა სამეფოს სატახტო ქალაქ <strong class="text-purple-700">გულანშაროს</strong> მიუახლოვდა.
+        </div>
+
+        <!-- სექცია 1: ქალაქი, მებაღე და ფატმან-ხათუნი -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                🏰 გულანშარო, მელიქ-სურხავი და ვაჭრობა
+            </h2>
+            
+            <!-- ინფორმაცია ქალაქზე (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">👑</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">გულანშარო და მეფე:</p>
+                    <p>ეს იყო ზღვათა სამეფოს სატახტო ქალაქი. მებაღისაგან გაიგეს, რომ აქაურ მეფეს <strong class="text-red-600">მელიქ-სურხავი</strong> ერქვა.</p>
+                </div>
+            </div>
+            
+            <!-- ვაჭრობა და უსენი (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">💰</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ვაჭართა უხუცესი:</p>
+                    <p>ვაჭრებს ადგილობრივ უხუცესთან, <strong class="text-accent">უსენთან</strong>, მიჰქონდათ საქონელი, რაც მოეწონებოდა, ყიდულობდა. უსენი ამჟამად ქალაქში არ იყო.</p>
+                </div>
+            </div>
+
+            <!-- ფატმან-ხათუნის მიღება (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">💁‍♀️</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ფატმან-ხათუნი:</p>
+                    <p>მებაღემ უთხრა, რომ უსენის ცოლი <strong class="text-red-700">ფატმან-ხათუნი</strong> მიიღებდა ვაჭრებს, რადგან მისი ქმარი არ იმყოფებოდა ადგილზე. ფატმანმა მართლაც მიიწვია ისინი და კარგად გაუმასპინძლდა.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 2: ფატმანის სიყვარული და ავთანდილის ეშმაკობა -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                💌 ფატმანის ვნება და ავთანდილის გეგმა
+            </h2>
+            
+            <!-- ფატმანის სიყვარული (ბლოკი) -->
+            <div class="mb-4 info-block bg-red-50 flex items-start border-l-4 border-red-500">
+                <span class="text-3xl mr-3 mt-0.5">💘</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ფატმანის გრძნობები:</p>
+                    <p>ავთანდილი ფატმანს გულში ჩაუვარდა. წერილი მისწერა და გული გადაუშალა.</p>
+                </div>
+            </div>
+            
+            <!-- ავთანდილის სტრატეგია (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-100 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">🧠</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ავთანდილის საპასუხო წერილი:</p>
+                    <p>ავთანდილმა იფიქრა, რომ ფატმანს მთელი ქვეყნის ამბავი ეცოდინებოდა და მის დახმარებით <strong class="text-blue-600">ნესტან-დარეჯანის</strong> ამბავს გაიგებდა. ამიტომ გრძნობებით აღსავსე საპასუხო წერილი მისწერა.</p>
+                </div>
+            </div>
+
+            <!-- შეხვედრის ჩაშლა (ბლოკი) -->
+            <div class="mb-4 info-block bg-yellow-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">⌛</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">დაბრკოლება:</p>
+                    <p>ფატმანმა სიხარულით იმავე ღამეს დაიბარა ავთანდილი, მაგრამ გზაზე მონამ შემოუთვალა: <strong class="text-red-700">ამაღამ ნუ მოხვალ, საქმე ისე მოეწყო, რომ ვერ მიგიღებო.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 3: მკვლელობა და საიდუმლოს გამხელა -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                🗡️ მოულოდნელი ჭაბუკი და ფატმანის შიში
+            </h2>
+
+            <!-- შეხვედრა და ალერსი (ბლოკი) -->
+            <div class="mb-4 info-block bg-gray-100 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">🌹</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">დაუპატიჟებელი სტუმარი:</p>
+                    <p>ავთანდილი მაინც მივიდა. ფატმანს კიდეც ეწყინა, კიდეც ეამა და მიეცნენ ალერსსა და ტრფიალებას. ამ დროს მოულოდნელად თავს წაადგათ ფატმანის საყვარელი.</p>
+                </div>
+            </div>
+            
+            <!-- მუქარა და მოქმედება (ბლოკი) -->
+            <div class="mb-4 info-block bg-red-100 flex items-start border-l-4 border-red-500">
+                <span class="text-3xl mr-3 mt-0.5">⚠️</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">მკვლელობის მოთხოვნა:</p>
+                    <p>ჭაშნაგირი ფატმანს დაემუქრა: <strong class="text-red-700">ისე გაგიხდი საქმეს, რომ საკუთარი კბილებით შეგაჭმევ შენს შვილებსო.</strong> შეშინებულმა ფატმანმა ავთანდილს სთხოვა: <span class="italic">ან ის კაცი უნდა მოკლა ჩუმად... ანდა ახლავე აქედან უნდა აიბარგოო.</span></p>
+                </div>
+            </div>
+
+            <!-- აღსრულება (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-100 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">🔪</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ჭაშნაგირის მოკვლა:</p>
+                    <p>ავთანდილმა გაიგო მისი საცხოვრებელი, ღამით დახოცა მცველები, მოკლა ჭაშნაგირი და დასარწმუნებლად მოუტანა ფატმანს <strong class="text-accent">მოკლული კაცის ბეჭდიანი თითი</strong>. დამშვიდებული ფატმანი განცხრომას მიეცა ავთანდილთან და საიდუმლო გაანდო.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- სექცია 4: ნესტანის ამბავი (ფატმანის მონათხრობი) -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                📜 ნესტან-დარეჯანის თავგადასავალი გულანშაროში
+            </h2>
+
+            <!-- კიდობანი და დატყვევება (ბლოკი) -->
+            <div class="mb-4 info-block bg-blue-50 flex items-start border-l-4 border-blue-500">
+                <span class="text-3xl mr-3 mt-0.5">🌊</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">კიდობანი:</p>
+                    <p>ფანჯრიდან დაინახა კიდობანი, რომელიც მისი ბაღის პირდაპირ გამოიტანეს. გადმოვიდა ორი ზანგი და ერთი ლამაზი ქალი. მონები გაგზავნა, <strong class="text-red-700">ზანგები დახოცეს</strong> და ქალი მოიყვანეს.</p>
+                </div>
+            </div>
+            
+            <!-- ქმრისათვის დამალვა და გაცემა (ბლოკი) -->
+            <div class="mb-4 info-block bg-blue-50 flex items-start border-l-4 border-blue-500">
+                <span class="text-3xl mr-3 mt-0.5">🤫</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">საიდუმლოს გამხელა:</p>
+                    <p>ქალი ცალკე ოთახში დააბინავა და ქმარსაც უმალავდა, რადგან ეშინოდა, მეფეს არ აჩუქოსო. ბოლოს ქმარს გაუმხილა საიდუმლო, ფიცი ჩამოართვა, რომ არავის ეტყოდა. თუმცა ქმარი მეფესთან დათვრა და ქალი საცოლედ შესთავაზა მეფის შვილისთვის.</p>
+                </div>
+            </div>
+            
+            <!-- გაქცევა (ბლოკი) -->
+            <div class="mb-4 info-block bg-blue-50 flex items-start border-l-4 border-blue-500">
+                <span class="text-3xl mr-3 mt-0.5">🕊️</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">გაქცევა:</p>
+                    <p>მეფე გაკვირვებული დარჩა ქალის სილამაზით და თავისი შვილისთვის ცოლად. ქალმა მცველებს უთხრა, თავს მოვიკლავო, თუ არ გამაპარებთო და სანაცვლოდ <strong class="text-accent">ძვირფასი ქამარი</strong> შესთავაზა. ისინი დასთანხმდნენ. ქალი ფატმანთან მივიდა, ცხენი მოითხოვა და ღამით გაიპარა.</p>
+                </div>
+            </div>
+            
+            <!-- კავშირი მოკლულ ჭაბუკთან (ბლოკი) -->
+            <div class="info-block bg-red-100 flex items-start border-l-4 border-red-500">
+                <span class="text-3xl mr-3 mt-0.5">🔗</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">მოკლული ჭაბუკი:</p>
+                    <p>ფატმანმა დაასრულა მონათხრობი და თქვა, რომ ეს ამბავი <strong class="text-red-700">მოკლულმა ჭაბუკმაც</strong> იცოდა. ის მისი საყვარელი იყო და ამიტომ ემუქრებოდა, მეფესთან დაგაბეზღებო.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 5: მნიშვნელოვანი ფრაზები (შესწორებული თანმიმდევრობა) -->
+        <section>
+            <h2 class="text-2xl font-bold section-header mb-6 bg-amber-200 border-yellow-500">
+                ✍️ მნიშვნელოვანი ფრაზები:
+            </h2>
+            
+            <div class="space-y-6">
+                
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">იგი ყმა ვაჭრობს, თავადობს და თავსა მალავს ამითა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ესეა ზღვათა სამეფო თვისა ათისა სავლითა,
+მელიქ-სურხავი ხელმწიფობს, სრული სვითა და დავლითა.</pre>
+                </div>
+                
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მე ვარ მებაღე უსენის, ვაჭართა უხუცესისა;</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ფატმან ხათუნ შინა არის, ხათუნი და ცოლი მისი,
+პურად კარგი მასპინძელი, მხიარული, არ თუ მქისი;</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ფატმან, ცოლი უსენისი, გაეგება კართა წინა,
+ფატმან ხათუნს მოსლვა მისი, შე- ვით -ვატყევ, არ ეწყინა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ფატმან ხათუნ თვალად მარჯვე, არ-ყმაწვილი, მაგრა მზმელი,
+ნაკვთად კარგი, შავ-გრემანი, პირ-მუქანი, არ პირ-ხმელი,
+მუტრიბთა და მომღერალთა მოყვარული, ღვინის-მსმელი;</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ფატმანს ჰკლვიდა უმისობა, რამინისა ვითა ვისსა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ფატმან ხათუნს ავთანდილის გულსა ნდომა შეუვიდა,
+სიყვარული მეტის-მეტი მოემატა, ცეცხლებრ სწვიდა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მას მკურნალმან რაგვარ ჰკურნოს, თუ არ უთხრას, რაცა სჭირდეს?!</pre>
+                </div>
+                
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">დაწერა წიგნი საბრალო, მის ყმისა მისართმეველი,
+მისისა მიჯნურობისა, მისთა პატიჟთა მცნეველი.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">თქვა:ყვავი ვარდსა რას აქმნევს, ანუ რა მისი ფერია!
+რა უთქვამს, რა მოუჩმახავს, რა წიგნი მოუწერია!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">უმსგავსო საქმე ყოველი მოკლეა, მით ოხერია.</pre>
+                </div>
+                
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ისი დიაცი აქა ზის, მნახავი კაცთა მრავალთა,
+მივჰყვე, მიამბობს ყველასა, რაზომმცა, ცეცხლო, მწვავ ალთა,</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">კოკასა შიგან რაცა დგას, იგივე წარმოსდინდების!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მიუწერა:წავიკითხე შენი წიგნი, ჩემი ქება.
+შენ მომასწარ, თვარა შენგან მე უფრო მჭირს ცეცხლთა დება;</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ამას ღამე ნუ მოხვალო, ვერა მპოვებ შენთვის მზასა.
+მას ეწყინა, არ დაბრუნდა, თქვა, თუ:ჰგავსო ეგე რასა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ერთგან დასხდეს და დაიწყეს კოცნა, ლაღობა წყლიანი;
+შემოდგა კარსა ყმა ვინმე კეკლუცი, ტან-ნაკვთიანი.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">უთხრა:არ გიშლი, დიაცო, ფერთა მი და მო კრთოლასა,
+გამითენდების, განანებ მაგა მოყმისა ყოლასა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">გამკიცხე, ბოზო დიაცო, და დამდევ გასათრეველად,
+ვარ შენთა შვილთა შენითა კბილითა დამაჭმეველად.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ორისაგან ერთი ქმენით, ამის მეტსა ნურას ჰლამით:
+მო- ვით-მე-ჰკლავ იმა კაცსა, წადი, მოკალ მალვით ღამით.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">რა ესე ესმა ავთანდილს ლაღსა, ბუნება-ზიარსა,
+ადგა და ლახტი აიღო, რა ტურფა რამე მხნე არსა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">თვითო ხელი ყელსა მიჰყო, მუნვე მისცა სულთა ხდასა,
+თავი თავსა შეუტაკა, გაურია ტვინი თმასა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">იგი ყმა საწოლს მარტო წვა გულითა ჯავრიანითა;
+ხელი მოჰკიდა, მიწასა დაასკვნა, დაკლა დანითა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ზღვათაკე სარკმლით გატყორცა, ზღვისა ქვიშათა დარია,
+მისთვის არცა სად სამარე, არცა სათხარად ბარია</pre>
+                </div>
+                
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ესე მიკვირს, სისხლი მისი ასრე ვითა მოიპარა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ვჰკადრე: მითხარ, ვინ ხარ, მზეო, ანუ შვილი ვისთა ტომთა?
+იმა ზანგთა სით მოჰყვანდი შენ, პატრონი ცისა ხომთა?</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მან ტურფამან სახლსა ჩემსა ეგრე დაყო ხანი დიდი;
+ვერ გავანდევ ქმარსა ჩემსა, შესმენისა მქონდა რიდი;</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ვერა დავჰყარეთ პასუხი ჩვენ საუბრითა ჩვენითა:
+ვეფხი-ავაზა პირ-ქუშად ზის, წყრომა ვერ ვუგრძენითა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">აწ ნახეთ მთრვალი ვაჭარი, ცქაფი, უწრფელი, მსწრომელი.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">რა მეფემან უსენს წინა სვა მრავალი დოსტაქანი,
+დაავიწყდეს იგი ფიცნი, რა მუსაფნი, რა მაქანი!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">რას ვაგრძელებდე! გატეხა ფიცი, სიმტკიცე სჯულისა,
+უამბო პოვნა ქალისა, მჭვრეტთაგან მზედ სახულისა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ბედი უბედო ჩემზედა მიწყივ ავისა მქმნელია.
+კარგი რამ მჭირდეს, გიკვირდეს, ავი რა საკვირველია!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ან ვისიმე მიჯნურია, საყვარელი ეგონების,
+მისგან კიდე არვისად სცალს, არცაღა ვის ეუბნების.</pre>
+                </div>
+                
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ანუ არის ბრძენი ვინმე, მაღალი და მაღლად მხედი,
+არცა ლხინი ლხინად უჩანს, არცა ჭირი ზედა-ზედი;</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">სიკვდილამდის ვის მოუკლავს თავი კაცსა მეცნიერსა?
+რა მისჭირდეს, მაშინ უნდან გონებანი გონიერსა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">უცილოდ თავსა მოვიკლავ, გულსა დავიცემ დანასა,
+თქვენ დაგხოცს თქვენი პატრონი, სოფელს ვერ დაჰყოფთ  ხანასა;
+ესე სჯობს: მოგცე საჭურჭლე, მძიმე მარტყია ტანასა,
+მე გამაპარეთ, გამიშვით, თვარა დაიწყებთ ნანასა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ნახე, თუ ოქრო რასა იქმს, კვერთხი ეშმაკთა ძირისა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ვა, ოქრო მისთა მოყვასთა აროდეს მისცემს ლხენასა,
+დღედ სიკვდილამდის სიხარბე შეაქმნევს კბილთა ღრჭენასა.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მე, გლახ, ვიყავ მისი ნეზვი, იგი იყო ჩემი ვაცი.
+კაცსა დასვრის უგულობა და დიაცსა ბოზი ნაცი.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მით არ ჯერ ვარ ქმარსა ჩემსა, მჭლე არის და თვალად ნასი.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">ესე ამბავი მასთანა ვთქვი დიაცურად, ხელურად:
+ჩემსავე მოსლვა მის მზისა და გაპარება მელურად.
+გამჟღავნებასა მექადდა არ მოყვარულად, მტერულად.</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მუქაფა ღმერთმან შემოგზღოს! - მადლსა გკადრებდე მე რასა, 
+რომელმან დამხსენ მშვიდობით იმა გველისა მზერასა!</pre>
+                </div>
+
+                <div class="info-block quote-block">
+                    <pre class="poetic-strophe">მოყვარე მტერი ყოვლისა მტრისაგან უფრო მტერია;</pre>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ფუტერი -->
+        <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-500">
+            <p>კოტე ლომიძე</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვეფხისტყაოსნის გეგმა</title>
+    <!-- Tailwind CSS-ის ჩატვირთვა -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* ქართული შრიფტისთვის */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-left: 5px solid #a855f7; /* იასამნისფერი აქცენტი */
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        .section-header {
+            color: #4c1d95; /* მუქი იასამნისფერი */
+        }
+        .list-item {
+            list-style-type: none;
+            padding-left: 1rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        .list-item::before {
+            content: "•";
+            color: #a855f7;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 bg-gray-100 min-h-screen">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-8 p-4 bg-white rounded-xl shadow-lg">
+            <h1 class="text-4xl font-extrabold text-gray-800">ვეფხისტყაოსნის გეგმა</h1>
+            <p class="text-xl text-gray-600 mt-2 section-header">ტარიელის ამბავი (თათბირამდე)</p>
+        </header>
+
+        <main class="space-y-6">
+            
+            <!-- 1. ტარიელის წარმომავლობა -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    1. ტარიელის წარმომავლობა და ინდოეთის სამეფოები 👑🇮🇳
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">ინდოეთში შვიდი სამეფოა; ექვსის მმართველია მეფე ფარსადანი.</li>
+                    <li class="list-item">მეშვიდესი - ტარიელის მამა სარიდანი.</li>
+                </ul>
+            </div>
+
+            <!-- 2. სარიდანის გადაწყვეტილება -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    2. სარიდანის გადაწყვეტილება და ტარიელის სტატუსი 🤝👨‍👦
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">სარიდანმა თავისი წილი სამეფო ფარსადანს გადასცა 🎁.</li>
+                    <li class="list-item">ტარიელი ფარსადანის შვილივით იზრდება, რადგან მეფე უშვილოა.</li>
+                </ul>
+            </div>
+
+            <!-- 3. ნესტან-დარეჯანის დაბადება -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    3. ნესტან-დარეჯანის დაბადება და აღზრდა 👶👸🏰
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">5 წლისაა ტარიელი, როდესაც იბადება მშვენიერი ქალი – ნესტან-დარეჯანი ✨.</li>
+                    <li class="list-item">ერთად იზრდებიან, სანამ ნესტანი 7 წლის გახდება, შემდეგ ნესტანს ცალკე კოშკში გადაიყვანენ💔.</li>
+                </ul>
+            </div>
+
+            <!-- 4. მამის გარდაცვალება -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    4. მამის გარდაცვალება და ტარიელის დაწინაურება 😢🎖️
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">მამის გარდაცვალება 😥.</li>
+                    <li class="list-item">გლოვის შემდეგ ფარსადანისგან ამირბარობის მიღება ⬆️.</li>
+                </ul>
+            </div>
+
+            <!-- 5. ნესტანის პირველი ხილვა -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    5. ნესტანის პირველი ხილვა და ტარიელის დაბნედა 💖⚡️
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">ნადირობიდან დაბრუნებულნი ნესტანის კოშკთან 🏹.</li>
+                    <li class="list-item">ფარდაგი გადაიწია და ტარიელმა ნესტანის ელვასავით სახე იხილა 😲.</li>
+                    <li class="list-item">გულის წასვლა, მიწაზე დაცემა და გრძნობაზე ძლივს მოყვანა 😵‍💫.</li>
+                </ul>
+            </div>
+
+            <!-- 6. ნესტანის წერილი -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    6. ნესტანის წერილი და გმირობისკენ მოწოდება 📜💪
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">ასმათის მონა და შემდეგ ასმათი სტუმრობენ ტარიელს ✉️.</li>
+                    <li class="list-item">ნესტანის გზავნილი: „სჯობს საყვარელსა უჩვენნე საქმენი საგმირონია!“ 🗣️.</li>
+                    <li class="list-item">ხატაელები ხარკს არ იხდიან, უნდა შეებრძოლოს მათ! ⚔️</li>
+                </ul>
+            </div>
+
+            <!-- 7. ხატაეთთან ბრძოლის წინაპირობა -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    7. ხატაეთთან ბრძოლის წინაპირობა და სიყვარულის გამჟღავნება 😡💍
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">ტარიელის წერილი ხატაელთა მეფე რამაზთან, მოთხოვნა გამოცხადდეს 📩.</li>
+                    <li class="list-item">რამაზ მეფის ამაყი და უარყოფითი პასუხი 😤.</li>
+                    <li class="list-item">ომში წასვლის წინ ნესტანისგან სიყვარულის ფიცი და ცოლობის დაპირება💍.</li>
+                </ul>
+            </div>
+
+            <!-- 8. ხატაეთში ლაშქრობა -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    8. ხატაეთში ლაშქრობა და ტრიუმფალური დაბრუნება 🛡️💰
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="list-item">მამობილისგან გაზრდილი მხედარი ატყობინებს რამაზის ვერაგულ გეგმას (მარტო მიტყუება და მოკვლა) 🤫.</li>
+                    <li class="list-item">ტარიელი მცირე რაზმით ებრძვის რამაზს, შემდეგ ჯარიც მიეშველება და ლაშქარი სულ მთლიანად გაუწყვიტეს 🔥.</li>
+                    <li class="list-item">ქალაქის აღება, სიმდიდრის წამოღება და რამაზის ხელშეკრული წამოყვანა ⛓️.</li>
+                    <li class="list-item">ნესტანისთვის საგანგებოდ მოაქვს საუცხოო ყაბაჩა და რიდე 🎁.</li>
+                    <li class="list-item">ინდოთა მეფე ზეიმით ხვდება. ტარიელი ნესტანთან პირისპირ ზის და მისი მშვენიერებით ტკბება 😍.</li>
+                    <li class="list-item">ზეიმის შემდეგ ასმათს მოაქვს ნესტანის წერილი: დღეს მეტად მომეწონე, უშენოდ ღმერთმა ნუ მაცოცხლოსო 💖.</li>
+                    <li class="list-item">ნესტანი ტარიელს სთხოვს მის რიდეს და სანაცვლოდ სამკლავეს სთავაზობს 💍.</li>
+                </ul>
+            </div>
+            
+            <!-- 9. მნიშვნელოვანი ფრაზები -->
+            <div class="card bg-white p-6 rounded-xl">
+                <h2 class="text-2xl font-bold mb-3 section-header">
+                    9. მნიშვნელოვანი ფრაზები 📜✨
+                </h2>
+                <ul class="list-none space-y-2 text-gray-700 text-sm italic">
+                    <li class="list-item">მე ხუთისა წლისა ვიყავ, დაორსულდა დედოფალი. 🤰</li>
+                    <li class="list-item">დავარ იყო და მეფისა, ქვრივი, ქაჯეთს გათხოვილი, მას სიბრძნისა სასწავლელად თვით მეფემან მისცა შვილი. 🎓</li>
+                    <li class="list-item">ცრუ და მუხთალი სოფელი მიწყივ ავისა მქმნელია. 💔🌍</li>
+                    <li class="list-item">ასმათ ფარდაგსა აზიდნა, გარე ვდეგ მოფარდაგულსა; ქალსა შევხედენ, ლახვარი მეცა ცნობასა და გულსა. 💘😵</li>
+                    <li class="list-item">მტერ-დაცემული ვეგონე, არ ვიცი, რას ჩმახვიდიან. 🤕</li>
+                    <li class="list-item">მე შენი ვარ, ნუ მოჰკვდები, მაგრა ბნედა ცუდი მძულსა. 💘</li>
+                    <li class="list-item">ბედითი ბნედა, სიკვდილი რა მიჯნურობა გგონია? სჯობს, საყვარელსა უჩვენნე საქმენი საგმირონია! 💪🔥</li>
+                    <li class="list-item">არცა თუ ჩვენ ვართ ჯაბანნი, არც ციხე-უმაგრონია, ვინ არის თქვენი ხელმწიფე? ჩვენზედა რა პატრონია? 😡👑</li>
+                    <li class="list-item">მე თუ ზე-პირ მიცინია, ქვე-ქვე მითქვამს იდუმალ ვა. 🎭😔</li>
+                    <li class="list-item">გეცრუო, ღმერთმან მიწა მქმნას, ნუმცა ცხრითავე ვზი ცითა! 🔥🙏</li>
+                    <li class="list-item">ჩვენთა მგელთაცა დასჭამენ, ინდონო, თქვენნი თხანია. 🐺🐐</li>
+                    <li class="list-item">არიან მეტად მუხთალნი, - ჩვენ ერთხელ კვლაცა ვნახენით. 🐍</li>
+                    <li class="list-item">კარგი საქმე კაცსა ზედა აზომ თურე არ წახდების. ✅</li>
+                    <li class="list-item">თქვენი მესმა საღალატო, საცნობელად გამოვვარდი. 👂🤫</li>
+                    <li class="list-item">რა ერთსა გცემდენ ათასნი, ეგრეცა მოგერევიან. ⚔️</li>
+                    <li class="list-item">შევსთვალე: „ფიცხლად წამოდით, მოგრაგნეთ მთა და გორია“. 🚀ᯓ🏃🏻‍♀️‍➡️ ⛰️</li>
+                    <li class="list-item">განგებაა, დღესცა მომკლავს, ქვემცა სადა დავიმალე?! 💀</li>
+                    <li class="list-item">ვინცა მოკვდეს მეფეთათვის, სულნი მათნი ზეცას რბიან. 💀👑🕊️⬆️</li>
+                    <li class="list-item">შიგან ასრე გავერივე, გნოლის ჯოგსა ვითა ქორი, კაცი კაცსა შემოვსტყორცი, ცხენ-კაცისა დავდგი გორი. 🐓🦃🦩🦅🥷🏇</li>
+                    <li class="list-item">მე ხატაელთა მიმუხთლეს, - თუცა მათ ეცა ზიანად. 😈</li>
+                    <li class="list-item">მოვირჭვენ და მოვივლინე, რაცა მწადდა, აგრე ვყავ-რე. ✨</li>
+                    <li class="list-item">ორგული და მოღალატე ნამსახურსა დავამგვანე. ⚖️</li>
+                    <li class="list-item">მე ვჰკადრე: „ღმერთი ვინათგან შეუნდობს შეცოდებულსა, უყავით თქვენცა წყალობა მას ღონე-გაცუდებულსა“. 🙏💧</li>
+                    <li class="list-item">მალვით ვუჭვრეტდი, მიჭვრეტდა, სხვად არად მეუბნებოდა. 🤫👀</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

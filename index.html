@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ვეფხისტყაოსნის გეგმები</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'parchment': '#fcf5e5',
+              'parchment-dark': '#f0e6d2',
+              'royal-red': '#7f1d1d',
+              'royal-gold': '#b45309',
+            },
+            fontFamily: {
+              serif: ['Georgia', 'Times New Roman', 'Times', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- React & ReactDOM (UMD for standalone usage) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel Standalone (to compile JSX in browser) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <style>
+        /* Custom scrollbar styles */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(180, 83, 9, 0.1);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(180, 83, 9, 0.3);
+            border-radius: 3px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(180, 83, 9, 0.5);
+        }
+        body { margin: 0; padding: 0; }
+        iframe { border: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-parchment text-gray-900 font-serif antialiased overflow-hidden">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // --- Icons (Inline SVGs to remove external dependencies) ---
+        const Icons = {
+            Menu: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>,
+            X: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>,
+            BookOpen: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>,
+            Scroll: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>,
+            ChevronRight: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>,
+            ExternalLink: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>,
+            AlertCircle: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>,
+            RefreshCw: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+        };
+
+        // --- Configuration / Data ---
+        const PLANS = [
+            { id: 1, title: "გეგმა პირველი: დასაწყისი", filename: "plan1.html", description: "შესავალი და ამბის დასაწყისი" },
+            { id: 2, title: "გეგმა მეორე: როსტევან მეფე", filename: "plan2.html", description: "ნადირობა და უცხო მოყმის გამოჩენა" },
+            { id: 3, title: "გეგმა მესამე: ავთანდილის ანდერძი", filename: "plan3.html", description: "ავთანდილის წასვლა საძებნელად" },
+            { id: 4, title: "გეგმა მეოთხე: ტარიელის ამბავი", filename: "plan4.html", description: "ტარიელის შეხვედრა და მისი ისტორია" },
+            { id: 5, title: "გეგმა მეხუთე: ნესტან-დარეჯანი", filename: "plan5.html", description: "მიჯნურთა ამბავი და გაყრა" },
+            { id: 6, title: "გეგმა მეექვსე: ფრიდონი", filename: "plan6.html", description: "ნურადინ-ფრიდონის გაცნობა" },
+            { id: 7, title: "გეგმა მეშვიდე: ქაჯეთი", filename: "plan7.html", description: "ქაჯეთის ციხის აღება" },
+            { id: 8, title: "გეგმა მერვე: ქორწილი", filename: "plan8.html", description: "გამარჯვება და ქორწილი" },
+            { id: 9, title: "გეგმა მეცხრე: დაბრუნება", filename: "plan9.html", description: "არაბეთში დაბრუნება" },
+            { id: 10, title: "გეგმა მეათე: დასასრული", filename: "plan10.html", description: "ეპილოგი და შეჯამება" }
+        ];
+
+        // --- Sidebar Component ---
+        const PlanSidebar = ({ plans, selectedPlanId, onSelectPlan, isOpen, toggleSidebar }) => {
+            return (
+                <aside className={`fixed inset-y-0 left-0 z-50 w-72 bg-parchment-dark border-r border-royal-gold/30 shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 lg:shadow-none`}>
+                    <div className="h-full flex flex-col">
+                        {/* Header */}
+                        <div className="p-6 border-b border-royal-gold/30 bg-parchment flex items-center justify-between">
+                            <div className="flex items-center gap-2 text-royal-red">
+                                <Icons.BookOpen className="w-6 h-6" />
+                                <h2 className="font-bold text-lg">სარჩევი</h2>
+                            </div>
+                            <button onClick={toggleSidebar} className="lg:hidden text-royal-red"><Icons.X className="w-6 h-6" /></button>
+                        </div>
+
+                        {/* List */}
+                        <div className="flex-1 overflow-y-auto p-4 space-y-2 custom-scrollbar">
+                            {plans.map((plan) => (
+                                <button
+                                    key={plan.id}
+                                    onClick={() => { onSelectPlan(plan); if (window.innerWidth < 1024) toggleSidebar(); }}
+                                    className={`w-full text-left p-4 rounded-lg border transition-all duration-200 group relative overflow-hidden ${selectedPlanId === plan.id ? 'bg-royal-red text-white border-royal-red shadow-md' : 'bg-white/50 border-stone-300 text-stone-800 hover:bg-white hover:border-royal-gold/50'}`}
+                                >
+                                    <div className="relative z-10 flex items-start gap-3">
+                                        <span className={`flex items-center justify-center w-6 h-6 text-xs font-bold rounded-full border ${selectedPlanId === plan.id ? 'bg-white text-royal-red border-white' : 'bg-parchment text-royal-gold border-royal-gold'}`}>{plan.id}</span>
+                                        <div>
+                                            <h3 className="font-bold text-sm leading-tight mb-1">{plan.title}</h3>
+                                            <p className={`text-xs ${selectedPlanId === plan.id ? 'text-white/80' : 'text-stone-500'}`}>{plan.description}</p>
+                                        </div>
+                                        {selectedPlanId === plan.id && <Icons.ChevronRight className="w-5 h-5 absolute right-0 top-1/2 -translate-y-1/2 opacity-50" />}
+                                    </div>
+                                </button>
+                            ))}
+                        </div>
+                        
+                        {/* Footer */}
+                        <div className="p-4 text-center border-t border-royal-gold/20 text-stone-500 text-xs italic">
+                            <div className="inline-block mb-1"><Icons.Scroll className="w-4 h-4 text-royal-gold" /></div>
+                            <div>ვეფხისტყაოსანი</div>
+                        </div>
+                    </div>
+                </aside>
+            );
+        };
+
+        // --- Viewer Component ---
+        const PlanViewer = ({ plan }) => {
+            const [key, setKey] = React.useState(0);
+            const handleReload = () => setKey(prev => prev + 1);
+
+            if (!plan) {
+                return (
+                    <div className="h-full flex flex-col items-center justify-center p-8 text-center text-stone-600 bg-parchment bg-opacity-50">
+                        <div className="w-24 h-24 rounded-full bg-royal-gold/10 flex items-center justify-center mb-6"><Icons.Scroll className="w-12 h-12 text-royal-gold" /></div>
+                        <h2 className="text-3xl font-bold text-royal-red mb-4">მოგესალმებით</h2>
+                        <p className="max-w-md text-lg mb-8">გთხოვთ, აირჩიოთ სასურველი გეგმა მარცხენა მენიუდან დეტალების სანახავად.</p>
+                        
+                        <div className="bg-white/60 p-6 rounded-lg border border-stone-200 text-sm max-w-lg text-left shadow-sm">
+                            <h4 className="font-bold flex items-center gap-2 mb-2 text-stone-800"><Icons.AlertCircle className="w-4 h-4" /> ინსტრუქცია:</h4>
+                            <p className="mb-2">იმისთვის რომ სისტემამ იმუშაოს, დარწმუნდით რომ თქვენი 10 HTML ფაილი მოთავსებულია ამ ფაილის გვერდით, იმავე საქაღალდეში.</p>
+                            <p>ფაილების სახელები უნდა ემთხვეოდეს: <span className="font-mono bg-stone-100 px-1 rounded text-royal-red">plan1.html</span>, <span className="font-mono bg-stone-100 px-1 rounded text-royal-red">plan2.html</span> და ა.შ.</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div className="h-full flex flex-col bg-white">
+                    {/* Header */}
+                    <div className="bg-white border-b border-stone-200 px-6 py-4 flex items-center justify-between shadow-sm z-10">
+                        <div>
+                            <h1 className="text-xl md:text-2xl font-bold text-royal-red">{plan.title}</h1>
+                            <p className="text-sm text-stone-500 font-sans">ფაილი: {plan.filename}</p>
+                        </div>
+                        <div className="flex gap-2">
+                            <button onClick={handleReload} className="p-2 hover:bg-stone-100 rounded-full text-stone-600 transition-colors" title="გვერდის განახლება"><Icons.RefreshCw className="w-5 h-5" /></button>
+                            <a href={plan.filename} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 bg-royal-gold text-white rounded hover:bg-yellow-700 transition-colors text-sm font-sans"><span>გახსნა</span><Icons.ExternalLink className="w-4 h-4" /></a>
+                        </div>
+                    </div>
+
+                    {/* Iframe */}
+                    <div className="flex-1 relative bg-stone-50">
+                        <iframe key={`${plan.id}-${key}`} src={plan.filename} title={plan.title} className="absolute inset-0 w-full h-full border-0"></iframe>
+                    </div>
+                </div>
+            );
+        };
+
+        // --- Main App Component ---
+        const App = () => {
+            const [selectedPlanId, setSelectedPlanId] = React.useState(null);
+            const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
+
+            const selectedPlan = PLANS.find(p => p.id === selectedPlanId) || null;
+
+            return (
+                <div className="flex h-screen w-full overflow-hidden relative">
+                    {/* Mobile Toggle */}
+                    <div className="lg:hidden fixed top-4 left-4 z-40">
+                        <button onClick={() => setIsSidebarOpen(true)} className="bg-royal-red text-white p-2 rounded-md shadow-lg hover:bg-red-800 transition-colors"><Icons.Menu className="w-6 h-6" /></button>
+                    </div>
+
+                    {/* Mobile Overlay */}
+                    {isSidebarOpen && <div className="fixed inset-0 bg-black/50 z-40 lg:hidden backdrop-blur-sm" onClick={() => setIsSidebarOpen(false)} />}
+
+                    <PlanSidebar plans={PLANS} selectedPlanId={selectedPlanId} onSelectPlan={(plan) => setSelectedPlanId(plan.id)} isOpen={isSidebarOpen} toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
+                    
+                    <main className="flex-1 h-full w-full relative">
+                        <PlanViewer plan={selectedPlan} />
+                    </main>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

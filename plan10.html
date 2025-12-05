@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ნესტანის ადგილსამყოფელი, ქაჯეთის აღება და დიდი ქორწილი</title>
+    <!-- Tailwind CSS-ის ჩატვირთვა -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ფონტის კონფიგურაცია და სტილები -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* ღია ფონი */
+            color: #1f2937;
+            line-height: 1.75;
+        }
+        .text-accent {
+            color: #ef4444; /* წითელი აქცენტი (Red-500) */
+        }
+        .section-header {
+            background-color: #fee2e2; /* ღია წითელი ფონი სათაურისთვის */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border-left: 6px solid #ef4444;
+            color: #991b1b;
+        }
+        /* ახალი სტილი ბლოკებისთვის */
+        .info-block {
+            padding: 1rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .info-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        /* სტილი ციტატებისთვის */
+        .quote-block {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+        }
+        /* სტილი ტაეპების გასასწორებლად */
+        .poetic-strophe {
+            white-space: pre-wrap;
+            font-family: 'Georgia', serif;
+            line-height: 1.5;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl p-6 md:p-10 border-t-8 border-red-500">
+        <!-- სათაური -->
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3">
+                ⚔️ ქაჯეთის ციხის აღება და ნესტანის დახსნა 👑
+            </h1>
+            <p class="text-gray-500 text-lg italic"></p>
+        </header>
+
+        <!-- ძირითადი ტექსტი - შესავალი -->
+        <div class="mb-8 text-xl font-medium text-gray-700 p-4 bg-gray-50 rounded-lg shadow-inner info-block">
+            ფატმან-ხათუნის მონათხრობის მოსმენის შემდეგ ავთანდილი სიხარულისაგან ძლივს გადაურჩა გულის წასვლას და დაჟინებით სთხოვა ფატმანს, გაეგო, თუ რა მოუვიდა ნესტანს მას შემდეგ.
+        </div>
+
+        <!-- სექცია 1: ნესტანის ადგილსამყოფელი (ქაჯეთის მონის მონათხრობი) -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                📍 ნესტანის ადგილსამყოფელი: ქაჯეთი 🏰
+            </h2>
+            
+            <!-- მონის ისტორია (ბლოკი) -->
+            <div class="mb-4 info-block bg-pink-50 flex items-start border-l-4 border-pink-500">
+                <span class="text-3xl mr-3 mt-0.5">🗣️</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ქაჯეთის მონის ამბავი:</p>
+                    <p>ფატმანმა ხანაგის ეზოში შეკრებილი მონების საუბარი მოისმინა. ერთ-ერთი მათგანი ქაჯეთის მეფის მონა იყო. მან მოჰყვა, რომ მისი უფროსის სამეკობრე ჯგუფმა <strong class="text-red-700">ცხენით მიმავალი უცხო ყმა</strong> დაინახა, რომელიც ქაჯეთს მიემართებოდა. დაჭერის შემდეგ იგი ქალი აღმოჩნდა. ეს იყო ნესტან-დარეჯანი, რომელიც <strong class="text-red-700">როსანის საცოლედ</strong> დანიშნეს.</p>
+                </div>
+            </div>
+            
+            <!-- დაზვერვა და ცნობები (ბლოკი) -->
+            <div class="mb-4 info-block bg-pink-50 flex items-start border-l-4 border-pink-500">
+                <span class="text-3xl mr-3 mt-0.5">🛡️</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ფატმანის დაზვერვა:</p>
+                    <p>ფატმანმა ეს მონა საკუთარ სახლში მიიყვანა, დაწვრილებით გამოჰკითხა და შემდეგ ქაჯეთში გაგზავნა ორი საკუთარი მონა, რათა დამატებითი ინფორმაცია მოეტანათ. მათ დაადგინეს:
+                        <ul class="list-disc list-inside mt-2 ml-4 text-sm">
+                            <li>ქაჯთა ქალაქი მიუვალია, შიგნით მაღალი ციხეა.</li>
+                            <li>ციხეში შესვლა მხოლოდ <strong class="text-red-600">გვირაბით</strong> შეიძლება.</li>
+                            <li>მეფის და <strong class="text-red-600">დულარდუხტი</strong> ქალს ციხეში ამწყვდევს როსანთან ქორწილისთვის.</li>
+                            <li>ციხექალაქის სამ კარს 3-3 ათასი კაცი დარაჯობს, გვირაბს — <strong class="text-red-600">10 000 კაცი</strong>.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 2: გზავნილები და ნესტანის პასუხი -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                ✉️ ნესტანის წერილი: სასოწარკვეთა და ნიშანი 💔
+            </h2>
+            
+            <!-- ავთანდილი ამხელს ვინაობას (ბლოკი) -->
+            <div class="mb-4 info-block bg-yellow-50 flex items-start border-l-4 border-yellow-500">
+                <span class="text-3xl mr-3 mt-0.5">🤝</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ავთანდილი ამხელს საიდუმლოს:</p>
+                    <p>გახარებულმა ავთანდილმა ფატმანს თავისი ვინაობა და მიზანი გაუმხილა და დახმარება სთხოვა. ფატმანმა დაუყოვნებლივ გაგზავნა მონა ნესტანთან წერილით, აუწყა ტარიელის ძმადნაფიცის მოსვლა და ნიშნის გამოგზავნა სთხოვა.</p>
+                </div>
+            </div>
+            
+            <!-- ნესტანის პასუხი (ბლოკი) -->
+            <div class="mb-4 info-block bg-red-100 flex items-start border-l-4 border-red-600">
+                <span class="text-3xl mr-3 mt-0.5">🥀</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ნესტანის სასოწარკვეთილი გზავნილი:</p>
+                    <p>ნესტანმა დაწერა ორი წერილი:
+                        <ul class="list-disc list-inside mt-2 ml-4 text-sm">
+                            <li><strong>ფატმანს:</strong> მადლობის წერილი, მაგრამ აფრთხილებს, რომ მისი დახსნა შეუძლებელია.</li>
+                            <li><strong>ტარიელს:</strong> გახარებულია, რომ ტარიელი ცოცხალია, მაგრამ ურჩევს, <strong class="text-red-700">არ მოვიდეს</strong>, რადგან მისი დახსნა შეუძლებელია. სთხოვს, რომ წავიდეს და მშობლებს დაეხმაროს მტრებთან ბრძოლაში.</li>
+                        </ul>
+                    </p>
+                    <p class="mt-2 font-bold">ნიშანი:</p>
+                    <p>სატრფოს ნიშნად ტარიელს გამოუგზავნა <strong class="text-red-700">მისგან ნაჩუქარი რიდის ნაჭერი</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 3: გზა და ტარიელის პოვნა -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                🦁 ავთანდილი და ტარიელის პოვნა 🏞️
+            </h2>
+
+            <!-- ტარიელის პოვნა (ბლოკი) -->
+            <div class="mb-4 info-block bg-gray-100 flex items-start border-l-4 border-gray-500">
+                <span class="text-3xl mr-3 mt-0.5">🧭</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ავთანდილის მოქმედება:</p>
+                    <p>ავთანდილი დაუყოვნებლივ გაემართა. წერილი გაუგზავნა ფრიდონს, შეატყობინა ამბავი და სთხოვა დალოდებოდა, რადგან ნესტანის დასახსნელად ერთად უნდა წასულიყვნენ.</p>
+                    <p class="mt-2">გაზაფხულის დამდეგს, ავთანდილი მივიდა ტარიელის გამოქვაბულთან, ტარიელი <strong class="text-blue-700">შამბნარის პირას</strong> იპოვა, სადაც ლომი მოეკლა და ხმალს წმენდდა.</p>
+                </div>
+            </div>
+            
+            <!-- გაერთიანება და შოკი (ბლოკი) -->
+            <div class="mb-4 info-block bg-red-50 flex items-start border-l-4 border-red-500">
+                <span class="text-3xl mr-3 mt-0.5">💧</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ტარიელის რეაქცია:</p>
+                    <p>ავთანდილმა ტარიელს წერილი და რიდის ნაჭერი გადასცა. სიხარულისა და შოკისგან ტარიელს გული წაუვიდა და მკვდარივით დაეცა. წყლის ვერპოვნამ ავთანდილს აიძულა, <strong class="text-red-700">მოკლული ლომის სისხლი</strong> მოეტანა პეშვით და გულზე დაესხა. ამან ტარიელი გრძნობაზე მოიყვანა.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 4: ქაჯეთის ბრძოლა და გამარჯვება -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                🔥 ქაჯეთის აღება: გმირული სამეული 💥
+            </h2>
+            
+            <!-- მზადება (ბლოკი) -->
+            <div class="mb-4 info-block bg-blue-50 flex items-start border-l-4 border-blue-500">
+                <span class="text-3xl mr-3 mt-0.5">⚙️</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">მზადება ომისთვის:</p>
+                    <p>გამოქვაბულში დაბრუნების შემდეგ ტარიელმა გახსნა <strong class="text-blue-700">ორმოცი ოთახი</strong>, რომელშიც დევების იარაღი და საგანძური ინახებოდა. წაიღეს იარაღი და ასმათითურთ გაეშურნენ ფრიდონთან, რომელმაც ისინი <strong class="text-blue-700">300 სიხარულით</strong> მიიღო.</p>
+                </div>
+            </div>
+            
+            <!-- ბრძოლის გეგმა და აღება (ბლოკი) -->
+            <div class="mb-4 info-block bg-red-100 flex items-start border-l-4 border-red-500">
+                <span class="text-3xl mr-3 mt-0.5">🏹</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ბრძოლა ქაჯეთში:</p>
+                    <p>სამივე გმირმა გამართა თათბირი და მიიღეს <strong class="text-red-700">ტარიელის რჩევა</strong>. დილაადრიან ერთდროულად დაეცნენ ქალაქის კარებს, შელეწეს ისინი, გაანადგურეს მცველები და შევიდნენ ქალაქში. ტარიელი გვირაბის კართან მიიჭრა, დაამარცხა 10 000 მცველი და გააღო გვირაბი. ნესტანი გამოიყვანეს, ქაჯეთის მთელი სიმდიდრე გაიტანეს და გზას დაადგნენ.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- სექცია 5: ორი ქორწილი და ბედნიერი დასასრული -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                💍 ორი ქორწილი: ტარიელი/ნესტანი და ავთანდილი/თინათინი 🎉
+            </h2>
+            
+            <!-- ქორწილი ზღვათა მეფესთან (ბლოკი) -->
+            <div class="mb-4 info-block bg-green-50 flex items-start border-l-4 border-green-500">
+                <span class="text-3xl mr-3 mt-0.5">💚</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">პირველი ქორწილი:</p>
+                    <p>ზღვათა მეფემ დიდი პატივით მიიღო გმირები, გადაუხადეს ქორწილი <strong class="text-green-700">ტარიელსა და ნესტანს</strong>, და ზღვათა მეფეს უძღვნეს ქაჯეთის სამეფო, ხოლო ფატმან-ხათუნს - მთელი ქაჯეთიდან წამოღებული საჭურჭლე.</p>
+                </div>
+            </div>
+
+            <!-- ქორწილი არაბეთში (ბლოკი) -->
+            <div class="mb-4 info-block bg-green-50 flex items-start border-l-4 border-green-500">
+                <span class="text-3xl mr-3 mt-0.5">💖</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">მეორე ქორწილი:</p>
+                    <p>ფრიდონთან მორიგი ზეიმის შემდეგ, ტარიელმა ფრიდონი ავთანდილთან გაგზავნა. ავთანდილს გაეცინა - "ჩემი სატრფო ქაჯებს ხომ არა ჰყავთ, ის მეფედ ზისო!". შემდეგ ისინი როსტევან მეფესთან, არაბეთს გაემართნენ.</p>
+                    <p>ტარიელმა როსტევანს ბოდიში მოუხადა მონების დახოცვისთვის და სთხოვა, <strong class="text-green-700">ავთანდილისა და თინათინის</strong> სიყვარულს წინააღმდეგობა არ გაუწევია. როსტევანი დათანხმდა, რომ იმაზე უკეთეს სასიძოს ვერ იპოვნიდა. შედგა დიდი ზეიმი და ქორწილი.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 6: მნიშვნელოვანი ფრაზები -->
+        <section>
+            <h2 class="text-2xl font-bold section-header mb-6 bg-yellow-200 border-yellow-600">
+                ✍️ მნიშვნელოვანი ფრაზები 📜
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- 1. ესე ღმერთსა მისაგვრელად -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🙏 ესე ღმერთსა მისაგვრელად მისად ჩვენთვის მოუგვრია,<br>მივუტანოთ არმაღანად, დაგვიმადლებს მეტად დია. 🎁</p>
+                </div>
+
+                <!-- 2. დიალოგი ქაჯთა შესახებ -->
+                <div class="info-block quote-block p-4">
+                    <p class="font-semibold text-orange-700 mb-1">დიალოგი ქაჯთა შესახებ:</p>
+                    <p class="poetic-strophe">❓ მაგრა საქმე ქაჯეთისა გამაგონე უფრო მრთელად,<br>ქაჯნი ყველა უხორცოა, რამან შექმნა ხორციელად? ❓</p>
+                    <p class="poetic-strophe mt-2">✨ ქაჯნი სახელად მით ჰქვიან, არიან ერთად კრებულნი<br>კაცნი, გრძნებისა მცოდნენი, ზედა გახელოვნებულნი. 🪄</p>
+                    <p class="poetic-strophe mt-2">👤 ამისთვის ქაჯად უხმობენ გარეშემონი ყველანი,<br>თვარა იგიცა კაცნია ჩვენებრვე ხორციელანი. 🧍</p>
+                </div>
+
+                <!-- 3. ფატმანი და ავთანდილი -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">💖 მას ღამე ფატმან იამა ავთანდილთანა წოლითა;<br>ყმა უნდო-გვარად ეხვევის ყელსა ყელითა ბროლითა. 🌙</p>
+                </div>
+
+                <!-- 4. ვარდი და ბულბული -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">💔 იტყვის, თუ: მნახეთ, მიჯნურნო, იგი, ვინ ვარდი ა ვისად,<br>უმისოდ ნეხვთა ზედა ვზი ბულბული მსგავსად ყვავისად! 🥀</p>
+                </div>
+
+                <!-- 5. ავთანდილის ძებნა -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🗺️ რომე შენ ქალი გყოლია, მე ძებნად მისვე ქალისად<br>მივლია ყოვლი ქვეყანა, მის მზისა მონაცვალისად; 🔎</p>
+                </div>
+
+                <!-- 6. გულის მოლხენა -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">✅ თუცა თუ შენი ამბავი შენ არა მომასმენიე,<br>მე ეგრეცა ვცან მართალი, მით გულსა მოვალხენიე; 🥳</p>
+                </div>
+
+                <!-- 7. ციხის აღწერა -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🏰 ციხეს ვზი ეზომ მაღალსა, თვალნი ძლივ გარდასწვდებიან,<br>გზა გვირაბითა შემოვა, მცველნი მუნ ზედა დგებიან. 🔒</p>
+                </div>
+
+                <!-- 8. არამ სიცოცხლე უშენოდ -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🗡️ არამ სიცოცხლე უშენოდ! ვარ აქამდისცა ნანითა;<br>ან თავსა კლდეთა ჩავიქცევ, ანუ მოვიკლავ დანითა. 😔</p>
+                </div>
+
+                <!-- 9. ქაჯეთს პატიმარია -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">⚔️🌞 იგი მზე ქაჯთა მეფესა ჰყავს, ქაჯეთს პატიმარია.<br>მუნ მისლვა მიჩანს თამაშად, თუცა გზა საომარია. 💪</p>
+                </div>
+
+                <!-- 10. მსგავსი ყველაი მსგავსსა შობს -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">💡 მსგავსი ყველაი მსგავსსა შობს, ესე ბრძენთაგან თქმულია. 🧠</p>
+                </div>
+
+                <!-- 11. მოწურვილ იყო ზაფხული -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🌷 მოწურვილ იყო ზაფხული, ქვეყნით ამოსლვა მწვანისა,<br>ვარდის ფურცლობის ნიშანი, დრო მათის პაემანისა. 🌸</p>
+                </div>
+
+                <!-- 12. აწ გაახლდების ყვავილი -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🌸 ეტყოდა: ვცანო ამბავი, შენ რომე გეამებოდა,<br>აწ გაახლდების ყვავილი, ვარდი აქამდის ჭნებოდა. 🌟</p>
+                </div>
+
+                <!-- 13. სიწყნარე გმობილი -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🤫 თქმულა: სიწყნარე გმობილი სჯობს სიჩქარესა ქებულსა! 🐢</p>
+                </div>
+
+                <!-- 14. ბოროტსა სძლია კეთილმან -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🌟 ბოროტსა სძლია კეთილმან, - არსება მისი გრძელია! ✨</p>
+                </div>
+
+                <!-- 15. ასი ათასსა აჯობებს -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">💯 ასი ათასსა აჯობებს, თუ გამორჩევით მქმნელია. 🎯</p>
+                </div>
+
+                <!-- 16. მზისა შესაყრელად -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">🫂 ნახეს, მზისა შესაყრელად გამოეშვა მთვარე გველსა,<br>მკერდი მკერდსა შეეწება, გარდაეჭდო ყელი ყელსა. 🌕</p>
+                </div>
+
+                <!-- 17. ეხვეოდეს ერთმანერთსა -->
+                <div class="info-block quote-block p-4">
+                    <p class="poetic-strophe">😊 ეხვეოდეს ერთმანერთსა, აკოცეს და ცრემლნი ღვარნეს;<br>აქანამდის ჭირ-ნახულთა ამას იქით გაიხარნეს. 🥳</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ფუტერი -->
+        <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-500">
+            <p>ვეფხისტყაოსანი: ავთანდილი და ნესტანის ხსნა</p>
+        </footer>
+    </div>
+
+</body>
+</html>

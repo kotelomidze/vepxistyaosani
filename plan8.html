@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავთანდილის თავგადასავალი: ფრიდონი და გულანშარო</title>
+    <!-- Tailwind CSS-ის ჩატვირთვა -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ფონტის კონფიგურაცია -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* ღია ფონი */
+            color: #1f2937;
+            line-height: 1.75;
+        }
+        .text-accent {
+            color: #10b981; /* ღია მწვანე აქცენტი (Emerald-600) */
+        }
+        .section-header {
+            background-color: #d1fae5; /* ღია მწვანე ფონი სათაურისთვის */
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border-left: 5px solid #10b981;
+        }
+        /* ახალი სტილი ბლოკებისთვის */
+        .info-block {
+            padding: 1rem;
+            border-radius: 0.75rem; /* უფრო მომრგვალებული კუთხეები */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* უფრო ძლიერი ჩრდილი */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .info-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        /* სტილი ციტატებისთვის */
+        .quote-block {
+            background-color: #fffbeb; /* ღია ყვითელი (Amber-50) */
+            border-left: 4px solid #f59e0b; /* ნარინჯისფერი ხაზი */
+        }
+        /* სტილი ტაეპების გასასწორებლად */
+        .poetic-strophe {
+            white-space: pre-wrap; /* ეს საშუალებას აძლევს ახალ ხაზებს HTML-ში რეალურად იმუშაოს */
+            font-family: 'Georgia', serif; /* ტაეპებისთვის უფრო კლასიკური ფონტი */
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl p-6 md:p-10 border-t-8 border-emerald-500">
+        <!-- სათაური -->
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3">
+                ⚔️ ავთანდილის გზა: ფრიდონი და გულანშარო 🗺️
+            </h1>
+            <p class="text-gray-500 text-lg italic">გეგმა</p>
+        </header>
+
+        <!-- ძირითადი ტექსტი -->
+        <div class="mb-8 text-xl font-medium text-gray-700 p-4 bg-gray-50 rounded-lg shadow-inner info-block">
+            ავთანდილი გაემგზავრა მულღაზანზარს ფრიდონ მეფესთან.
+        </div>
+
+        <!-- სექცია 1: ფრიდონი და დახმარების თხოვნა -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                👑 ფრიდონი და დახმარების თხოვნა
+            </h2>
+            
+            <!-- შეხვედრა (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">🎯</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">შეხვედრა:</p>
+                    <p>ქალაქთან მიახლოებისას ავთანდილმა ფრიდონი თავისი ამალით მინდორში <strong class="text-red-600">სანადიროდ</strong> დაინახა. ავთანდილმა ოსტატურად ესროლა ისარი მფრინავ ქორს და ძირს ჩამოაგდო, რითაც მონადირეების ყურადღება მიიპყრო.</p>
+                </div>
+            </div>
+            
+            <!-- ცნობა (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">🤝</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ცნობა:</p>
+                    <p>ავთანდილმა მონადირეებს სთხოვა, ფრიდონისთვის გადაეცათ, რომ <strong class="text-accent">ტარიელის ძმადნაფიცი</strong> მოსულიყო და საქმე ჰქონდა მასთან.</p>
+                </div>
+            </div>
+
+            <!-- ფრიდონის რეაქცია (ბლოკი) -->
+            <div class="mb-4 info-block bg-emerald-50 flex items-start">
+                <span class="text-3xl mr-3 mt-0.5">🤩</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">ფრიდონის რეაქცია:</p>
+                    <p>ფრიდონს ეს ამბავი მეტად გაუხარდა, რადგან  შვიდი წელი იყო, რაც ტარიელს დაშორდა. მან ავთანდილი დიდი ამბით მიიღო, მოისმინა მისი და ტარიელის თავგადასავალი და დახმარება აღუთქვა.</p>
+                </div>
+            </div>
+
+            <!-- გამომშვიდობება (ბლოკი) -->
+            <div class="info-block bg-red-100 flex items-start border-l-4 border-red-500">
+                <span class="text-3xl mr-3 mt-0.5">😢</span>
+                <div>
+                    <p class="font-bold text-gray-800 mb-1">გამომშვიდობება:</p>
+                    <p>ფრიდონი ავთანდილს ზღვის პირს ჩამოჰყვა. იქ <strong class="text-red-700">ტირილითა და ვაებით</strong> გამოეთხოვნენ ერთმანეთს.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- სექცია 2: მგზავრობა და ვაჭრებთან შეხვედრა -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                🌊 მგზავრობა და ვაჭრებთან შეხვედრა
+            </h2>
+
+            <!-- სია (ყველა პუნქტი ცალკე ბლოკია) -->
+            <div class="space-y-4">
+                <div class="info-block bg-gray-100 flex items-start">
+                    <span class="text-3xl mr-3 mt-0.5">⏱️</span>
+                    <div>
+                        <span class="font-semibold text-gray-900">უშედეგო ძებნა:</span> ავთანდილმა <strong class="font-extrabold text-blue-600">ასი დღე იარა</strong>, მაგრამ უშედეგოდ.
+                    </div>
+                </div>
+                <div class="info-block bg-gray-100 flex items-start">
+                    <span class="text-3xl mr-3 mt-0.5">🚚</span>
+                    <div>
+                        <span class="font-semibold text-gray-900">ვაჭართა ქარავანი:</span> ერთხელ ქედიდან ზღვის პირას დაინახა ვაჭართა ქარავანი.
+                    </div>
+                </div>
+                <div class="info-block bg-red-100 flex items-start border-l-4 border-red-500">
+                    <span class="text-3xl mr-3 mt-0.5">⚠️</span>
+                    <div>
+                        <span class="font-semibold text-gray-900">უსამის გაფრთხილება:</span> ვაჭართა უფროსი უსამი უყვება ეგვიპტელი ვაჭრის შესახებ<strong class="text-red-700">(მეკობრეებმა გაძარცვეს და დახოცეს მისი თანამგზავრები)</strong>. ამიტომაც იყვნენ შეჩერებულნი და ვერ ბედავდნენ ზღვაში შესვლას.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 3: მეკობრეების დამარცხება და გულანშარო -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold section-header mb-6">
+                🏴‍☠️ მეკობრეების დამარცხება და გულანშარო
+            </h2>
+            
+            <div class="space-y-4 text-lg">
+                <!-- ავთანდილის პირობა (ბლოკი) -->
+                <div class="info-block bg-emerald-100 flex items-start">
+                    <span class="text-3xl mr-3 mt-0.5">🛡️</span>
+                    <div>
+                        <span class="font-bold text-gray-800">დამშვიდება:</span> ავთანდილმა ვაჭრები დაამშვიდა: <span class="italic text-green-700">ნუ გეშინიათ, მე გიხსნით მათგან, „მე მივინდობ სისხლთა თქვენთა“.</span>
+                    </div>
+                </div>
+
+                <!-- ბრძოლა (ბლოკი) -->
+                <div class="info-block bg-emerald-100 flex items-start">
+                    <span class="text-3xl mr-3 mt-0.5">💥</span>
+                    <div>
+                        <span class="font-bold text-gray-800">გამარჯვება:</span> მან ვაჭრები ნავში ჩაკეტა, თვითონ კი უშიშრად დადგა. ავთანდილმა კეტით მოტეხა ძელი და <strong class="text-red-800">მუსრი გაავლო მეკობრეებს</strong>.
+                    </div>
+                </div>
+
+                <!-- ავთანდილის უარი და მოთხოვნა (ბლოკი) -->
+                <div class="info-block bg-emerald-100 flex items-start">
+                    <span class="text-3xl mr-3 mt-0.5">🤫</span>
+                    <div>
+                        <span class="font-bold text-gray-800">მოთხოვნა:</span> ავთანდილმა სიმდიდრეზე უარი თქვა და სთხოვა: <span class="italic">არ გაეცათ და არ გაემჟღავნებინათ მისი მეომრობა. უთხრა, რომ ვაჭრულად გამოეწყობოდა და თავს მათ უფროსად გაასაღებდა.</span>
+                    </div>
+                </div>
+
+                <!-- დანიშნულების ადგილი (ბლოკი) -->
+                <div class="info-block bg-emerald-100 flex items-start">
+                    <span class="text-3xl mr-3 mt-0.5">🏰</span>
+                    <div>
+                        <span class="font-bold text-gray-800">დანიშნულების ადგილი:</span> კარგა ხნის მგზავრობის შემდეგ მიუახლოვდნენ ქალაქს, რომელიც აღმოჩნდა ზღვათა სამეფოს სატახტო ქალაქი <strong class="text-purple-700">გულანშარო</strong>.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- სექცია 4: მნიშვნელოვანი ფრაზები (ახალი განყოფილება) -->
+        <section>
+            <h2 class="text-2xl font-bold section-header mb-6 bg-amber-200 border-yellow-500">
+                ✍️ მნიშვნელოვანი ფრაზები
+            </h2>
+            
+            <div class="space-y-4 text-base">
+
+                <!-- ციტატა 1: ავთანდილის ნადირობა (ოთხტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🎯 ავთანდილის ოსტატობა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „მათ ლაშქართა ყოლბსა შუა ორბი სითმე გარდმოფრინდა;
+                        ყმამან ცხენით შეუტივა, გაამაყდა, არ შეშინდა,
+                        შესტყორცა და ჩამოაგდო, დაეცა და სისხლი სდინდა,
+                        გარდახდა და ფრთენი დასჭრნა, წყნარად შეჯდა, არ აქშინდა.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 2: მონადირეების გაოცება (ოთხტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">👀 მონადირეების გაოცება:</p>
+                    <p class="poetic-strophe ml-4">
+                        „იგი რა ნახეს მესროლთა, სროლასა მოეშლებოდეს,
+                        ალყა დაშალეს, მოვიდეს, მოეხვეოდეს, ბნდებოდეს,
+                        იქით და აქათ უვლიდეს, ზოგნი უკანა ჰყვებოდეს,
+                        ვერცა ჰკადრებდეს: ვინ ხარო, ვერცა რას ეუბნებოდეს.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 3: ავთანდილის წარდგენა (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🤝 ვინაობა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „ვარ უცხო ვინმე ღარიბი, სამყოფთა მოშორვებული,
+                        ძმად-ფიცი ტარიელისი, თქვენს წინა მომგზავრებული.“
+                    </p>
+                </div>
+                
+                <!-- ციტატა 4: ფრიდონთან დამეგობრება (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">😍 მოწონება:</p>
+                    <p class="poetic-strophe ml-4">
+                        „მოეხვივნეს ერთმანერთსა, უცხოობით არ დაჰრიდონ;
+                        თვით უსახოდ ფრიდონს ყმა და მოეწონა ყმასა ფრიდონ;“
+                    </p>
+                </div>
+
+                <!-- ციტატა 5: ძებნის გაგრძელება (ერთტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">✨ მიზანი:</p>
+                    <p class="poetic-strophe ml-4">
+                        „გამომირჩიე, სით მიჯობს ძებნა მის მზისა ზენისა.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 6: ქარავანი (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🤔 ქარავნის მდგომარეობა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „მუნ ქარავანი ურიცხვი იდგა მის ზღვისა კიდესა.
+                        შეიჭირვებდეს, ჭმუნვიდეს, ვერცა დგეს, ვერცა ვლიდესა.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 7: უსამი (ერთტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">👴 უხუცესი:</p>
+                    <p class="poetic-strophe ml-4">
+                        „უსამ იყო ქარავნისა უხუცესი, კაცი ბრძენი.“
+                    </p>
+                </div>
+                
+                <!-- ციტატა 8: ვაჭრების წარდგენა (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🕋 ვაჭრების ვინაობა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „გარდახდა. ჰკადრეს: `ჩვენ ვართო მობაღდადენი ვაჭარნი,
+                        მაჰმადის სჯულის მჭირავნი, აროდეს გვისვმან მაჭარნი.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 9: გაფრთხილება (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🚨 შეშინება:</p>
+                    <p class="poetic-strophe ml-4">
+                        „ჩვენ აქა ვპოვეთ ზღვის პირსა კაცი უსულოდ მდებარე,
+                        გვითხრა: თუ შეხვალთ, დაგხოცენ; კიდე ცოცხალ ვარ მე ბარე?!“
+                    </p>
+                </div>
+
+                <!-- ციტატა 10: ავთანდილის ფილოსოფია (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">💡 ბედისწერა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „ყმამან უთხრა: ვინცა ჭმუნავს, ცუდია და ცუდად ცთების!
+                        რაცა მოვა საქმე ზენა, მომავალი არ აგვცთების;“
+                    </p>
+                </div>
+
+                <!-- ციტატა 11: ნავების გამოჩენა (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🚢 საფრთხე:</p>
+                    <p class="poetic-strophe ml-4">
+                        „მათი ბადრაგა ავთანდილ უძღვის გულითა ქველითა.
+                        გამოჩნდა ნავი მეკობრე დროშითა მეტად გრძელითა.“
+                    </p>
+                </div>
+                
+                <!-- ციტატა 12: ავთანდილის დამოკიდებულება ომისადმი (ერთტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🗡️ სიმამაცე:</p>
+                    <p class="poetic-strophe ml-4">
+                        „უგანგებოდ ვერას მიზმენ, შე-ცა-მებნენ ხმელთა სპანი.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 13: ვაჭრების დაცვა (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🔒 დაცვა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „თქვენ, ვაჭარნი, ჯაბანნი ხართ, ომისაცა უმეცარნი,
+                        შორს ისრითა არ დაგხოცნენ, ჩაიხშენით თანა კარნი;“
+                    </p>
+                </div>
+                
+                <!-- ციტატა 14: ბრძოლის შედეგი (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">💥 განადგურება:</p>
+                    <p class="poetic-strophe ml-4">
+                        „ძელი მოსტეხა ავთანდილ, დარჩა ნავ-დაულეწელი;
+                        არ დარჩა კაცი ცოცხალი მუნ მისგან დაუფრეწელი.“
+                    </p>
+                </div>
+                
+                <!-- ციტატა 15: შიში სიყვარულს შობს (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">⚖️ დაქვემდებარება:</p>
+                    <p class="poetic-strophe ml-4">
+                        „ზოგთა ჰკადრეს ზენაარი: ნუ დაგვხოცო, შენსა სჯულსა!
+                        მართლად იტყვის მოციქული: შიში შეიქმს სიყვარულსა.“
+                    </p>
+                </div>
+
+                <!-- ციტატა 16: ავთანდილის მოთხოვნა (ორტაეპი) -->
+                <div class="info-block quote-block">
+                    <p class="italic text-gray-700 mb-1">🎭 ფარული გეგმა:</p>
+                    <p class="poetic-strophe ml-4">
+                        „მე სავაჭროსა ჩავიცვამ, დავიწყებ ჯუბაჩობასა;
+                        თქვენ შემინახეთ ნამუსი, თქვენსა და ჩემსა ძმობასა!“
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ფუტერი -->
+        <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-500">
+            <p>კოტე ლომიძე</p>
+        </footer>
+    </div>
+
+</body>
+</html>
